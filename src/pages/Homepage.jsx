@@ -1,18 +1,20 @@
 // import { Link } from "react-router-dom"
 // import '../scss/pages/_homepage.scss'
-// import '../scss/style.scss'
+import Header from '../layout/Header.jsx';
+import Footer from '../layout/Footer.jsx';
+import '../scss/style.scss';
 
 
 function Home() {
     return (
         <div>
-            {/* <Header/> */}
+            <Header/>
 
             <div>
                 hello !
             </div>
 
-           {/* <Footer/> */}
+            <Footer/>
         </div>
     );
 }

@@ -1,0 +1,30 @@
+@import '../utils/mixins'; 
+
+.main-nav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    &-logo {
+        padding: 15px 0px 0px 5px;
+
+        @include desktop {
+            padding: 20px;
+        }
+
+        &-image {
+            width: 4em;
+            transition: all 0.3s ease;
+        
+            @include tablet {
+                width: 6em;
+            }
+
+            @include desktop {
+                width : 8em;
+            }
+        }
+    }
+}
