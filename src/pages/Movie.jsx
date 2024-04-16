@@ -4,13 +4,13 @@ import Footer from '../layout/Footer';
 import '../scss/style.scss';
 
 
-function Home() {
+function Movie() {
     return (
         <div>
             <Header/>
 
             <div>
-                on va voir lol
+        photo du film + description
             </div>
 
             <Footer/>
@@ -18,4 +18,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Movie;

@@ -10,7 +10,9 @@ function Footer() {
         <nav className="footer">
             <div className="footer-items">
                 <Logo className="footer-items-logo" imageClassName="footer-items-logo-image" />
+                
                 <p className="footer-items-text"> <span className="footer-items-text-span"> © </span> Axelle Maolé - Tous droits réservés - 2024.</p>
+                <p> Conditions d&rsquo;utilisation et Politique de confidentialité Donnez-nous votre avis Aide <span className="footer-items-text-span"> © </span> Knowledge </p>
             </div>
         </nav>
     );

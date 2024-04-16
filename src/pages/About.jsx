@@ -1,6 +1,10 @@
 // import '../scss/pages/_homepage.scss'
 import Header from '../layout/Header';
+import Intro from '../components/Intro';
+import Banner from '../components/Banner';
+import Categories from '../components/Categories';
 import Footer from '../layout/Footer';
+import '../scss/pages/_about.scss';
 import '../scss/style.scss';
 
 
@@ -10,7 +14,9 @@ function Home() {
             <Header/>
 
             <div>
-                on va voir lol
+                <Intro/>
+                <Banner/>
+                <Categories/>
             </div>
 
             <Footer/>

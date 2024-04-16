@@ -1,0 +1,27 @@
+@import '../utils/mixins'; 
+
+.banner-img { 
+    width: 90%;
+
+    @include tablet {
+        width: 90%;
+    }
+
+    @include desktop {
+        width: 90%;
+        padding: 20px 0 20px 0;
+    }
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+
+    &_pic {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    }
+}

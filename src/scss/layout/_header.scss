@@ -15,15 +15,15 @@
         }
 
         &-image {
-            width: 4em;
+            width: 3em;
             transition: all 0.3s ease;
         
             @include tablet {
-                width: 6em;
+                width: 3em;
             }
 
             @include desktop {
-                width : 8em;
+                width : 5em;
             }
         }
     }
