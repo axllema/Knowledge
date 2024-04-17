@@ -22,7 +22,7 @@ function Movie() {
                 <img alt="Icone âge." src={AgeIcon} className=''/>
                 <img alt="Icon de téléchargement." src={DownloadIcon} className=''/>
 
-                <h2> WOMEN </h2>
+                <h2> WOMAN </h2>
                 <p> 
                     Cinquante pays, 2.000 entrevues et 50 tournages.
                     Ce documentaire est un message d’amour et d’espoir envoyé à toutes les femmes du monde.
