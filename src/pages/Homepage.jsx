@@ -1,8 +1,12 @@
-// import '../scss/pages/_homepage.scss'
 import Header from '../layout/Header';
+import PrimedCarrousel from '../components/PrimedCarrousel';
+import HistoryCarrousel from '../components/HistoryCarrousel';
+import SocietyCarrousel from '../components/SocietyCarrousel';
+import NatureCarrousel from '../components/NatureCarrousel';
+import SportsCarrousel from '../components/SportsCarrousel';
 import Footer from '../layout/Footer';
+// import '../scss/pages/_homepage.scss'
 import '../scss/style.scss';
-
 
 function Home() {
     return (
@@ -10,7 +14,11 @@ function Home() {
             <Header/>
 
             <div>
-                on va voir lol
+                <PrimedCarrousel/>
+                <HistoryCarrousel/>
+                <SocietyCarrousel/>
+                <NatureCarrousel/>
+                <SportsCarrousel/>
             </div>
 
             <Footer/>
