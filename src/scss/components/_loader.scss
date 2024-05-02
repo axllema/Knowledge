@@ -20,60 +20,21 @@
         visibility: visible;
     }
 
-.loadingScreen__text {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    text-align: center;
-    width: auto;
-    height: 100px;
-    color: orange;
-    text-transform: uppercase;
-    font-size: 50px;
+    .loadingScreen__logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: blink 1s linear infinite;
 
-    @include tablet { 
-        font-size: 55px;
-    }
-
-    @include desktop { 
-        font-size: 60px;
-    }
-
-    .loadingScreen__text__span {
-        @for $i from 1 through 9 {
-            &:nth-child(#{$i}) {
-            $delayTime: 100 * $i + ms;
-            display: inline-block;
-            animation-name: loaderColor;
-            animation-iteration-count: infinite;
-            animation-delay: $delayTime;
-            animation-timing-function: ease;
-            animation-fill-mode: both;
-            backface-visibility: hidden;
-            animation-duration: 0.5s;
-            }
+        &-image {
+            width: 15em;
         }
-        padding: 5px;
-        vertical-align: middle;
     }
-}
 }
 
-@keyframes loaderColor {
-    0% {
-        color: lighten(grey, 46%);
-    }
-    50% {
-        color: orange;
-    }
-    100% {
-        color: lighten(grey, 46%);
-    }
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
