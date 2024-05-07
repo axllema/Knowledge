@@ -6,18 +6,27 @@ import Heroes from '../assets/img/categories/Sport-Arts/heroes.png';
 
 function SportsCarrousel() {
     return (
-        <div>
-            <img alt="Image de ..." src={Joueuses} className=''/>
-            <p> Les joueuses #PasLàPourDanser </p>
+        <div className='sports-div'>
 
-            <img alt="Image de ..." src={TaylorSwift} className=''/>
-            <p> Taylor Swift : Folklore, sessions au long pond studio </p>
+            <div className='container'>
+                <img alt="Image de ..." src={Joueuses} className=''/>
+                <p> Les joueuses #PasLàPourDanser </p>
+            </div>
 
-            <img alt="Image de ..." src={NotAGame} className=''/>
-            <p> Not a game </p>
+            <div className='container'>
+                <img alt="Image de ..." src={TaylorSwift} className=''/>
+                <p> Taylor Swift : Folklore, sessions au long pond studio </p>
+            </div>
 
-            <img alt="Image de ..." src={Heroes} className=''/>
-            <p> Heroes : silence et rock and roll </p>
+            <div className='container'>
+                <img alt="Image de ..." src={NotAGame} className=''/>
+                <p> Not a game </p>
+            </div>
+            
+            <div className='container'>
+                <img alt="Image de ..." src={Heroes} className=''/>
+                <p> Heroes : silence et rock and roll </p>
+            </div>
 
         </div>
     );

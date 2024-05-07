@@ -1,0 +1,59 @@
+.primed-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal{
+    position: fixed;
+    top: 35px;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-50%);
+}
+
+.history-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.society-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nature-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sports-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 550px;
+}
+
+p{
+    font-size: 20px;
+}

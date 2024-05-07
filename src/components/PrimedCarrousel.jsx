@@ -6,7 +6,7 @@ import PrimeFille from '../assets/img/categories/Primed/prim-fille.png';
 // import PlayIcon from '../assets/img/icons/play_icon.png';
 import AgeIcon from '../assets/img/icons/age_icon.png';
 import DownloadIcon from '../assets/img/icons/download_icon.png';
-import '../scss/components/_primedcarrousel.scss'
+import '../scss/components/_allcarrousel.scss'
 // import '../scss/style.scss';
 
 function PrimedCarrousel() {
@@ -14,16 +14,23 @@ function PrimedCarrousel() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     return (
-        <div>
-            <img alt="Image de ..." src={PrimeFille} className=''/>
-            <p>Petite fille</p>
+        <div className='primed-div'>
 
-            <img alt="Image de ..." src={PrimWomen} className='' onClick={() => setModalIsOpen(true)}/>
-            <p>Women</p>
+            <div className='container'>
+                <img alt="Image de ..." src={PrimeFille} className=''/>
+                <p>Petite fille</p>
+            </div>
 
-            <img alt="Image de ..." src={PrimNotYour} className=''/>
-            <p>I am not your n**** </p>
+            <div className='container' onClick={() => setModalIsOpen(true)} >
+                <img alt="Image de ..." src={PrimWomen} className=''/>
+                <p>Women</p>
+            </div>
 
+            <div className='container'>
+                <img alt="Image de ..." src={PrimNotYour} className=''/>
+                <p>I am not your n**** </p>
+            </div>
+            
             {modalIsOpen && (
                 <div className="modal">
 

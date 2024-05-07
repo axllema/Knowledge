@@ -6,20 +6,30 @@ import MovingArt from '../assets/img/categories/Nature-Env/moving-art.png';
 
 function NatureCarrousel() {
     return (
-        <div>
-            <img alt="Image de ..." src={Oiseaux} className=''/>
-            <p> La danse des oiseaux </p>
+        <div className='nature-div'>
 
-            <img alt="Image de ..." src={Cowspiracy} className=''/>
-            <p> Conspiracy : le secret de la durabilité </p>
+            <div className='container'>
+                <img alt="Image de ..." src={Oiseaux} className=''/>
+                <p> La danse des oiseaux </p>
+            </div>
 
-            <img alt="Image de ..." src={ZooZac} className=''/>
-            <p> Down to Earth with Zac Efron </p>
+            <div className='container'>
+                <img alt="Image de ..." src={Cowspiracy} className=''/>
+                <p> Conspiracy : le secret de la durabilité </p>
+            </div>
 
-            <img alt="Image de ..." src={MovingArt} className=''/>
-            <p> Moving art </p>
+            <div className='container'>
+                <img alt="Image de ..." src={ZooZac} className=''/>
+                <p> Down to Earth with Zac Efron </p>
+            </div>
 
-        </div>
+            <div className='container'>
+                <img alt="Image de ..." src={MovingArt} className=''/>
+                <p> Moving art </p>
+            </div>
+
+    </div>
+
     );
 }
 
