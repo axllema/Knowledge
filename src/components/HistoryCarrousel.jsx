@@ -28,6 +28,7 @@ function HistoryCarrousel() {
                 <img alt="Image de ..." src={BienEtre} className=''/>
                 <p> Industrie du bien-être : potions et poisons </p>
             </div>
+            
         </div>
     );
 }

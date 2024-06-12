@@ -1,3 +1,20 @@
+@import "utils/_mixins.scss";
+
+@import "components/_allcarrousel.scss";
+@import "components/_historycarrousel.scss";
+@import "components/_loader.scss";
+@import "components/_primedcarrousel.scss";
+
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+
+@import "pages/_about.scss";
+
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
 // styles pour les éléments visibles uniquement par les lecteurs d'écran
 .sr-only {
     border: 0 !important;

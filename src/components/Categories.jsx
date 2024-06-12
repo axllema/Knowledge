@@ -9,17 +9,25 @@ function Categories() {
         <div>
             <div className='categories-container'>
 
-                <img alt="Image de montagnes enneigées" src={NatureImg} className='categories-container_pic'/>
+            <div className='categories-item'>
+                <img alt="Image de montagnes enneigées" src={NatureImg} className='categories-item_pic'/>
                 <p>Nature et environnement</p>
+            </div>
 
-                <img alt="Image de protestation" src={ProtestImg} className='categories-container_pic'/>
+            <div className='categories-item'>
+                <img alt="Image de protestation" src={ProtestImg} className='categories-item_pic'/>
                 <p>Société et économie</p>
+            </div>
 
-                <img alt="Image du Sphinx de Gizeh" src={HistoireImg} className='categories-container_pic'/>
+            <div className='categories-item'>
+                <img alt="Image du Sphinx de Gizeh" src={HistoireImg} className='categories-item_pic'/>
                 <p>Histoire et science</p>
+            </div>
 
-                <img alt="Image d'athlétisme" src={SportImg} className='categories-container_pic'/>
+            <div className='categories-item'>
+                <img alt="Image d'athlétisme" src={SportImg} className='categories-item_pic'/>
                 <p>Sport et arts</p>
+            </div>
                 
             </div>
         </div>

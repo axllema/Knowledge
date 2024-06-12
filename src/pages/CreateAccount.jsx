@@ -12,6 +12,7 @@ function CreateAccount() {
 
             <div>
                 page pour créer un compte !
+                - work in progress
             </div>
 
             <Footer/>

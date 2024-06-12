@@ -4,12 +4,18 @@ import '../scss/style.scss';
 
 function Intro() {
     return (
-        <div>
-            <p> Knowledge est une nouvelle plateforme de streaming française : nous sommes là pour vous faire découvrir ou redécouvrir des documentaires exceptionnels.
-                Nous avons cinq grandes catégories, dont des documentaires primés - vous trouverez forcément votre bonheur.
+        <div className="container_intro">
+            <p className="container_intro_text">
+                Knowledge est une nouvelle plateforme de streaming française : <br/>
+                nous sommes là pour vous faire découvrir ou redécouvrir <br/>
+                des documentaires exceptionnels.
             </p>
 
-        <Link to="/create-account" className="link">  <button> Rejoindre l&rsquo;aventure </button> </Link>
+            <p className="container_intro_text">
+                Nous avons cinq grandes catégories, dont des documentaires <br/> primés - vous trouverez forcément votre bonheur.
+            </p>
+
+        <Link to="/create-account" className="container_intro_button link">  <button> Rejoindre l&rsquo;aventure </button> </Link>
         </div>
     );
 }
