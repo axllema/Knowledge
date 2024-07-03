@@ -11,25 +11,32 @@ function Login() {
     return (
         <div>
             <Header/>
-            <div className="test">
-                <main className="main bg-dark">
-                    <section className="sign-in-content">
-                        <h1>Sign In - work in progress </h1>
+            <div className="sign-in">
+                <main className="sign-in-container">
+                    <section className="sign-in-container-content">
+                        <h1> Connexion - work in progress </h1>
+
                         <form onSubmit={handleSubmit}>
                             <div className="field-content">
                                 <label htmlFor="email">Email</label>
-                                <input type="text" id="email" name="email" placeholder="Enter your email" />
+                                <input type="text" id="email" name="email" placeholder="..." />
                             </div>
+                            
                             <div className="field-content">
-                                <label htmlFor="password">Password</label>
-                                <input type="password" id="password" name="password" placeholder="Enter your password" />
+                                <label htmlFor="password">Mot de passe</label>
+                                <input type="password" id="password" name="password" placeholder="..." />
                             </div>
+
                             <div className="input-remember">
                                 <input type="checkbox" id="remember-me" />
                                 <label htmlFor="remember-me"> Se souvenir de moi</label>
                             </div>
+
                             <button type="submit" className="sign-in-button"> S&rsquo;identifier </button>
+
+                            <a href="/create-account" className="create-account-link"> Créer un compte</a>
                             <a href="/forgot-password" className="forgot-password-link">Mot de passe oublié ?</a>
+                            
                         </form>
                     </section>
                 </main>

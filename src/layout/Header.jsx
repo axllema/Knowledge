@@ -17,7 +17,6 @@ function Header() {
                 <div className="main-nav-links">
                     <Link to="/about" className="link"> À propos </Link>
                     <Link to="/login" className="link"> Se connecter </Link>
-                    <Link to="/create-account" className="link"> Créer un compte </Link>
                 </div>
             </nav>
         </header>
