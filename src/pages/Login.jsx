@@ -44,7 +44,7 @@ function Login() {
             <div className="sign-in">
                 <main className="sign-in-container">
                     <section className="sign-in-container-content">
-                        <h1> Connexion - work in progress </h1>
+                        <h1> Connexion </h1>
 
                         {!isLoggedIn ? (
                             <form onSubmit={handleSubmit}>
@@ -76,13 +76,17 @@ function Login() {
                             </form>
                         ) : (
                             <div>
-                                <p>Vous êtes connecté !</p>
-                                <button onClick={handleLogout}>Se déconnecter</button>
+                                <p>Vous êtes connecté.e !</p>
+                                <button onClick={handleLogout} className="sign-in-button">Se déconnecter</button>
                             </div>
                         )}
 
-                        <Link to="/create-account" className="create-account-link"> Créer un compte</Link>
-                        <Link to="/forgot-password" className="forgot-password-link">Mot de passe oublié ?</Link>
+                        {!isLoggedIn && (
+                            <React.Fragment>
+                                <Link to="/create-account" className="create-account-link"> Créer un compte</Link>
+                                <Link to="/forgot-password" className="forgot-password-link">Mot de passe oublié ?</Link>
+                            </React.Fragment>
+                        )}
                     </section>
                 </main>
                 <Footer />

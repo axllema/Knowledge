@@ -1,4 +1,5 @@
 // import '../scss/pages/_homepage.scss'
+import { useState, useEffect } from 'react';
 import Header from '../layout/Header';
 import Intro from '../components/Intro';
 import Banner from '../components/Banner';
@@ -9,9 +10,21 @@ import '../scss/style.scss';
 
 
 function Home() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    useEffect(() => {
+        const loggedIn = localStorage.getItem('isLoggedIn');
+        setIsLoggedIn(loggedIn === 'true');
+    }, []);
+
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+        localStorage.removeItem('isLoggedIn');
+    };
+
     return (
         <div>
-            <Header/>
+            <Header isLoggedIn={isLoggedIn} onLogout={handleLogout}/>
 
             <div>
                 <Intro/>
