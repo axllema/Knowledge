@@ -1,10 +1,38 @@
-.primed-div {
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.primed-div, .history-div, .society-div, .nature-div, .sports-div {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 20px 0;
 }
 
-.modal{
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.modal {
     position: fixed;
     top: 35px;
     left: 50%;
@@ -17,81 +45,47 @@
     align-items: center;
     flex-direction: column;
     transform: translateX(-50%);
-
-    /* &pic {
-        width: 100%;
-        height: 100%;
-    } */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     &_tab {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin: 10px 0;
         
-        &_title_container{
-        background-color: #198282;
+        &_title_container {
+            background-color: #198282;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 10px;
 
-        &_item{
-            font-size: 25px;
-            margin-bottom: 20px;
+            &_item {
+                font-size: 25px;
+                margin: 0;
+            }
         }
-    }
-    
-        &_age_icon {
-            width: 55px;
-            height: 55px;
-        }
-        
-        /* &_ba_icon {
-            width: 50px;
-            height: 50px;
-        } */
-        
-        &_download_icon {
+
+        &_age_icon, &_download_icon {
             width: 45px;
             height: 45px;
+            margin: 0 5px;
         }
     }
 
     &_description {
         font-size: 16px;
+        text-align: center;
+        margin: 10px 0;
     }
 }
 
-.history-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.homepage-sections {
+    padding: 20px;
 }
 
-.society-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.nature-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.sports-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-img{
-    width: 550px;
-}
-
-p{
-    font-size: 16px;
+footer {
+    margin-top: 20px;
+    text-align: center;
 }

@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react'; 
+import { useState, useEffect } from 'react';
 import Loader from '../components/Loader';
-
 import Header from '../layout/Header';
 import PrimedCarrousel from '../components/PrimedCarrousel';
 import HistoryCarrousel from '../components/HistoryCarrousel';
@@ -8,38 +7,47 @@ import SocietyCarrousel from '../components/SocietyCarrousel';
 import NatureCarrousel from '../components/NatureCarrousel';
 import SportsCarrousel from '../components/SportsCarrousel';
 import Footer from '../layout/Footer';
-// import '../scss/pages/_homepage.scss'
 import '../scss/style.scss';
 
 function Home() {
     const [loading, setLoading] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     useEffect(() => {
-        // simulates an asynchronous operation (e.g., fetching data)
-        const fakeAsyncOperation = () => {
-            setTimeout(() => {
-                setLoading(false); // sets loading to false after the operation is complete
-            }, 1500); // simulates 2 seconds of loading
-        };
-
-        fakeAsyncOperation();
+        const loggedIn = localStorage.getItem('isLoggedIn');
+        setIsLoggedIn(loggedIn === 'true');
+        setLoading(false);
     }, []);
 
+    const handleLogout = () => {
+        setIsLoggedIn(false);
+        localStorage.removeItem('isLoggedIn');
+    };
+    
     return (
         <div>
             <Loader visible={loading} />
             
-            <Header/>
+            <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} />
 
-            <div>
-                <PrimedCarrousel/>
-                <HistoryCarrousel/>
-                <SocietyCarrousel/>
-                <NatureCarrousel/>
-                <SportsCarrousel/>
+            <div className="homepage-sections">
+                <h2>Primés</h2>
+                <PrimedCarrousel />
+                
+                <h2>Histoire et science</h2>
+                <HistoryCarrousel />
+                
+                <h2>Société et économie</h2>
+                <SocietyCarrousel />
+                
+                <h2>Nature et environnement</h2>
+                <NatureCarrousel />
+                
+                <h2>Sport et arts</h2>
+                <SportsCarrousel />
             </div>
 
-            <Footer/>
+            <Footer />
         </div>
     );
 }
